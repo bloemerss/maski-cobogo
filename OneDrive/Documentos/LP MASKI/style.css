@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100.. 900&family=Poppins:ital,wght@0,100; 0,200; 0,300; 0,400; 0,500; 0,600; 0,700; 0,800; 0,900; 1,100; 1,200; 1,300; 1,400; 1,500; 1,600; 1,700; 1,800; 1.900&family=areia movediça:wght@300.. 700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    padding: 20px;
+    background-color: #CB5C5C;
+    height: 300px;
+}
+
+.initial-scale {
+    display: flex;
+    flex-direction: column;
+    background-color: #CB5C5C;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    max-width: 20%;
+}
+
+.cobogo {
+    margin-top: 20px;
+    max-width: 50%;
+}
+
+.texto-1 {
+    margin-top: 20px;
+    color: #F8F8F8;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 750px) {
+
+    .logo {
+        max-width: 40%;
+    }
+    
+    .cobogo {
+        margin-top: 20px;
+        max-width: 80%;
+    }
+
+    .texto-1 {
+        font-size: 16px;
+    }
+
+}
+
+.img-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-1 img {
+    max-width: 40%;
+    height: auto;
+    display: block; /* Para remover espaços em branco abaixo da imagem */
+    margin: 0 auto; /* Para centralizar a imagem */
+    margin-top: -50px;
+}
+
+
+@media screen and (max-width: 750px) {  
+    
+    .img-1 img {
+        max-width: 50%;
+        height: auto;
+        display: block; /* Para remover espaços em branco abaixo da imagem */
+        margin: 0 auto; /* Para centralizar a imagem */
+    }
+
+    header {
+        height: 215px;
+    }
+}
+
+@media screen and (max-width: 430px) and (min-width: 315px) {  /* iPhone 12 tem 390px de largura */
+
+    .img-1 img {
+        margin-top: -40px;
+    }
+
+    header {
+        height: 210px;
+    }
+
+    .texto-1 {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 430px) and (max-height: 932px) {
+    
+    .img-1 img {
+        margin-top: -30px;
+    }
+}
+
+.linha {
+    width: 97%;
+    height: 0.5px; /* Altura mais fina */
+    background-color: rgba(203, 92, 92, 0.5); 
+    margin-top: 30px;
+}
+
+.if-design {
+    padding: 5px;
+}
+
+.if-design .texto-1 {
+    max-width: 93%;
+    padding-left: 20px;
+}
+
+.texto-ifdesign {
+    padding: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    background-color: #CB5C5C;
+}
+
+.main-container {
+    padding-top: 20px;
+    max-width: 100%;
+}
+
+.main-container img {
+    max-width: 100%;
+}
+
+.h1-main, .paises {
+    padding: 20px;
+}
+
+@media only screen and (max-width: 344px) and (max-height: 740px) {
+    
+    .paises {
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 912px) and (min-width: 912px) {
+    
+    .h1-main {
+        max-width: 65%;
+    }
+
+    .texto-ifdesign {
+        max-width: 60%;
+    }
+}
+
+.paises {
+    width: 335px;
+    padding-bottom: 0;
+    padding-top: 50px;
+}
+
+.h1-main {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color:#FFFFFF;
+}
+
+.pictures {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Duas colunas iguais */
+    background-color: #F5A633;
+}
+
+.pictures img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
+    object-fit: cover; /* Faz com que a imagem preencha o contêiner sem distorcer suas proporções */
+    padding-top: 50px;
+}
+
+.end {
+    background-color: #CB5C5C;
+    padding-top: 40px;
+}
+
+.end-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    background-color: #F5A633;
+    padding: 20px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.end-container img {
+    max-width: 100%;
+}
+
+.end-container button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+} 
+
+.custom-button {
+    width: 200px; /* Largura fixa para o botão */
+    padding: 5px; /* Espaçamento interno */
+    background-color: #CB5C5C; /* Cor de fundo */
+    color: #FFFFFF; /* Cor do texto */
+    font-family: "Poppins", "sans-serif"; /* Fonte */
+    font-size: 16px; /* Tamanho da fonte */
+    border: none; /* Remove a borda */
+    outline: none; /* Remove o contorno */
+    cursor: pointer; /* Altera o cursor ao passar sobre o botão */
+    text-decoration: none; /* Remove a decoração de texto */
+    border-radius: 5px; 
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra embaixo do botão */
+}
+
+.custom-button a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.imagem-cobogos img{
+    max-width: 100%;
+}
+
+.footer {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-footer-one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-footer-one h1 {
+    font-weight: 500;
+    font-family: "Poppins", "sans-serif"; /* Fonte */
+    font-size: 13px; /* Tamanho da fonte */
+    background-color: #CB5C5C; /* Cor de fundo */
+    color: #FFFFFF; /* Cor do texto */
+    border-radius: 5px; 
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra embaixo do botão */
+    padding: 8px 15px; /* Espaçamento interno */
+    text-align: center;
+}
+
+.container-footer-two {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.container-footer-two a {
+    text-decoration: none; /* Remove sublinhado */
+    color: inherit; /* Mantém a cor padrão do texto */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.container-footer-two img {
+    margin-top: 20px;
+    max-width: 70%;
+}
+
+.rodape {
+    background-color: #CB5C5C;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.rodape h1 {
+    font-weight: 500;
+    font-family: "Poppins", "sans-serif"; /* Fonte */
+    font-size: 13px; /* Tamanho da fonte */
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 344px) {
+
+    .paises {
+        width: 80%;
+    }
+
+    .h1-main {
+        max-width: 80%;
+    }
+
+}
+
+@media only screen and (min-width: 375px) and (max-width: 375px) {
+
+    .h1-main {
+        max-width: 100%;
+    }
+
+    .texto-ifdesign {
+        max-width: 100%;
+    }
+
+}
+
+
+@media only screen and (max-width: 360px) and (min-width: 360px) {
+    
+    .paises {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 768px) {
+    
+    .h1-main, .texto-ifdesign {
+        max-width: 60%;
+    }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 768px) {
+    
+    .h1-main, .texto-ifdesign {
+        max-width: 60%;
+    }
+}
+
+@media screen and (min-width: 1201px) {
+
+    .texto-1, .texto-ifdesign, .h1-main, .container-footer-one h1, .custom-button {
+        font-size: 25px;
+    }
+
+    .texto-ifdesign, .h1-main {
+        width: 60%;
+    }
+
+    header {
+        height: 350px;
+    }
+
+    .main-container img {
+        width: 50%;
+    }
+
+    .rodape h1 {
+        font-size: 25px;
+    }
+
+    br {
+        display: none;
+    }
+
+    .pictures {
+        width: 50%;
+    }
+
+    .pictures-container {
+        background-color: #F5A633;
+        display: flex;
+        padding-bottom: 20px;
+    }
+
+    .end-container, .container-footer-one, .container-footer-two, .initial-scale {
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .imagem-cobogos img {
+        max-width: 50%;
+    }
+
+    .imagem-cobogos {
+        background-color: #F5A633;
+        padding-bottom: 20px;
+    }
+
+    .img-1 {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin: 10px; 
+    }
+
+    .img-1 img {
+        display: flex;
+    }
+
+}
+    
+
+
+
+
+
+
